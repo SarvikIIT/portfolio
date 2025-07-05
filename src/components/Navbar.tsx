@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             className="text-xl font-bold gradient-text font-space-grotesk"
           >
-            S
+            Sarvik
           </motion.div>
 
           {/* Desktop Navigation */}

@@ -10,9 +10,9 @@ const Experience: React.FC = () => {
     <section id="experience" className="section-padding relative">
       <div className="container-custom">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
@@ -27,9 +27,9 @@ const Experience: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Work Experience */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.4 }}
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-semibold mb-8 text-center lg:text-left">
@@ -40,11 +40,11 @@ const Experience: React.FC = () => {
               {workExperience.map((item, index) => (
                 <motion.div
                   key={item.id}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1, duration: 0.6 }}
+                  transition={{ delay: index * 0.05, duration: 0.4 }}
                   viewport={{ once: true }}
-                  className="card p-6 hover:border-primary-500/30 transition-all duration-300"
+                  className="card p-6 hover:border-primary-500/30 transition-all duration-200"
                 >
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center flex-shrink-0 border border-primary-500/20">
@@ -90,9 +90,9 @@ const Experience: React.FC = () => {
 
           {/* Education */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.4 }}
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-semibold mb-8 text-center lg:text-left">
@@ -103,11 +103,11 @@ const Experience: React.FC = () => {
               {education.map((item, index) => (
                 <motion.div
                   key={item.id}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1, duration: 0.6 }}
+                  transition={{ delay: index * 0.05, duration: 0.4 }}
                   viewport={{ once: true }}
-                  className="card p-6 hover:border-accent-500/30 transition-all duration-300"
+                  className="card p-6 hover:border-accent-500/30 transition-all duration-200"
                 >
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-accent-500/20 rounded-full flex items-center justify-center flex-shrink-0 border border-accent-500/20">
@@ -152,9 +152,9 @@ const Experience: React.FC = () => {
 
         {/* Additional Info */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.6 }}
+          transition={{ delay: 0.3, duration: 0.4 }}
           viewport={{ once: true }}
           className="mt-16 grid md:grid-cols-3 gap-8"
         >
