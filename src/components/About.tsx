@@ -45,20 +45,20 @@ const About: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex items-center gap-3 text-gray-200">
                   <MapPin className="w-5 h-5 text-cyan-400" />
-                  <span>{personalInfo.location}</span>
+                  <span>Lucknow, India</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-200">
                   <svg className="w-5 h-5 text-cyan-400" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                   </svg>
-                  <span>{personalInfo.email}</span>
+                  <span>sarvik.student.cd.eee24@iitbhu.ac.in</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-200">
                   <Calendar className="w-5 h-5 text-cyan-400" />
                   <span>Available for opportunities</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-200">
-                  <Code className="w-5 h-5 text-cyan-400" />
+                  <span className="text-cyan-400">👨‍💻</span>
                   <span>Student & Freelance</span>
                 </div>
               </div>
@@ -108,8 +108,8 @@ const About: React.FC = () => {
                     <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center mx-auto mb-4">
                       <span className="text-3xl">👨‍💻</span>
                     </div>
-                    <h3 className="text-xl font-semibold mb-2">{personalInfo.name}</h3>
-                    <p className="text-dark-400">{personalInfo.title}</p>
+                    <h3 className="text-xl font-semibold mb-2">Sarvik</h3>
+                    <p className="text-dark-400">IDD (Integrated Dual Degree) Student | Competitive Programmer</p>
                   </div>
                 </div>
               </div>

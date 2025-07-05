@@ -112,7 +112,7 @@ const Experience: React.FC = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-semibold mb-8 text-center lg:text-left">
-              <span className="gradient-text">Education</span> & Certifications
+              <span className="gradient-text">Education</span>
             </h3>
             
             <div className="space-y-8">
