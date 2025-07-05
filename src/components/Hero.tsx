@@ -30,14 +30,14 @@ const Hero: React.FC = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="mb-4"
             >
-              <span className="code-text text-lg">Hello, I'm</span>
+              <span className="code-text text-lg font-medium tracking-wide">Hello, I'm</span>
             </motion.div>
             
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4"
+              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-tight"
             >
               <span className="gradient-text">{personalInfo.name}</span>
             </motion.h1>
@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="text-xl md:text-2xl lg:text-3xl text-slate-200 mb-6 heading-text"
+              className="text-xl md:text-2xl lg:text-3xl text-slate-100 mb-6 heading-text font-medium"
             >
               {personalInfo.title}
             </motion.h2>
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="text-lg text-slate-100 mb-8 max-w-lg mx-auto lg:mx-0 body-text"
+              className="text-lg text-slate-300 mb-8 max-w-lg mx-auto lg:mx-0 body-text leading-relaxed"
             >
               {personalInfo.tagline}
             </motion.p>
