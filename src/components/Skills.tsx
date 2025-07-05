@@ -13,11 +13,11 @@ const Skills: React.FC = () => {
   const getProficiencyColor = (proficiency: string) => {
     switch (proficiency) {
       case 'Expert':
-        return 'from-emerald-400 to-emerald-600';
-      case 'Advanced':
         return 'from-cyan-400 to-cyan-600';
-      case 'Intermediate':
+      case 'Advanced':
         return 'from-blue-400 to-blue-600';
+      case 'Intermediate':
+        return 'from-purple-400 to-purple-600';
       case 'Proficient':
         return 'from-slate-400 to-slate-600';
       default:
@@ -28,11 +28,11 @@ const Skills: React.FC = () => {
   const getProficiencyBg = (proficiency: string) => {
     switch (proficiency) {
       case 'Expert':
-        return 'bg-emerald-500/10 border-emerald-500/30';
-      case 'Advanced':
         return 'bg-cyan-500/10 border-cyan-500/30';
-      case 'Intermediate':
+      case 'Advanced':
         return 'bg-blue-500/10 border-blue-500/30';
+      case 'Intermediate':
+        return 'bg-purple-500/10 border-purple-500/30';
       case 'Proficient':
         return 'bg-slate-500/10 border-slate-500/30';
       default:
@@ -53,7 +53,7 @@ const Skills: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Technical <span className="gradient-text">Expertise</span>
           </h2>
-          <p className="text-slate-300 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-200 max-w-2xl mx-auto text-lg">
             A comprehensive overview of my technical skills and areas of specialization in software development and computer science.
           </p>
         </motion.div>
@@ -72,7 +72,7 @@ const Skills: React.FC = () => {
               onClick={() => setSelectedCategory(category)}
               className={`px-6 py-3 rounded-full transition-all duration-300 font-medium ${
                 selectedCategory === category
-                  ? 'bg-gradient-to-r from-emerald-500 to-cyan-500 text-white shadow-lg shadow-emerald-500/25'
+                  ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-lg shadow-cyan-500/25'
                   : 'bg-slate-800/50 text-slate-300 hover:bg-slate-700/50 hover:text-white border border-slate-700/50'
               }`}
             >
@@ -105,7 +105,7 @@ const Skills: React.FC = () => {
                       {skill.icon}
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg text-slate-50 group-hover:text-white transition-colors">
+                      <h3 className="font-semibold text-lg text-white group-hover:text-white transition-colors">
                         {skill.name}
                       </h3>
                     </div>
@@ -118,7 +118,7 @@ const Skills: React.FC = () => {
                 </div>
                 
                 {skill.description && (
-                  <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                  <p className="text-gray-300 text-sm leading-relaxed mb-4">
                     {skill.description}
                   </p>
                 )}
@@ -148,7 +148,7 @@ const Skills: React.FC = () => {
             <h3 className="text-2xl font-bold mb-4">
               Areas of <span className="gradient-text">Specialization</span>
             </h3>
-            <p className="text-slate-300 max-w-3xl mx-auto">
+            <p className="text-gray-200 max-w-3xl mx-auto">
               My expertise spans across high-performance programming, competitive algorithms, and modern software development practices.
             </p>
           </div>
@@ -158,8 +158,8 @@ const Skills: React.FC = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:from-emerald-500/30 group-hover:to-cyan-500/30 transition-all duration-300">
                 <span className="text-2xl">⚡</span>
               </div>
-              <h4 className="text-lg font-semibold mb-2 text-slate-50">High Performance</h4>
-              <p className="text-slate-400 text-sm">
+              <h4 className="text-lg font-semibold mb-2 text-white">High Performance</h4>
+              <p className="text-gray-300 text-sm">
                 System-level programming with focus on optimization and efficiency
               </p>
             </div>
@@ -168,8 +168,8 @@ const Skills: React.FC = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:from-cyan-500/30 group-hover:to-blue-500/30 transition-all duration-300">
                 <span className="text-2xl">🏆</span>
               </div>
-              <h4 className="text-lg font-semibold mb-2 text-slate-50">Competitive Programming</h4>
-              <p className="text-slate-400 text-sm">
+              <h4 className="text-lg font-semibold mb-2 text-white">Competitive Programming</h4>
+              <p className="text-gray-300 text-sm">
                 Advanced algorithms and data structures for complex problem-solving
               </p>
             </div>
@@ -178,9 +178,9 @@ const Skills: React.FC = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:from-blue-500/30 group-hover:to-purple-500/30 transition-all duration-300">
                 <span className="text-2xl">💻</span>
               </div>
-              <h4 className="text-lg font-semibold mb-2 text-slate-50">Computer Science</h4>
-              <p className="text-slate-400 text-sm">
-                Core CS fundamentals and mathematical modeling expertise
+              <h4 className="text-lg font-semibold mb-2 text-white">Software Engineering</h4>
+              <p className="text-gray-300 text-sm">
+                System design principles and software development methodologies
               </p>
             </div>
             
@@ -188,8 +188,8 @@ const Skills: React.FC = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-purple-500/20 to-emerald-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:from-purple-500/30 group-hover:to-emerald-500/30 transition-all duration-300">
                 <span className="text-2xl">🛠️</span>
               </div>
-              <h4 className="text-lg font-semibold mb-2 text-slate-50">Development Tools</h4>
-              <p className="text-slate-400 text-sm">
+              <h4 className="text-lg font-semibold mb-2 text-white">Development Tools</h4>
+              <p className="text-gray-300 text-sm">
                 Modern development practices and infrastructure management
               </p>
             </div>
@@ -210,14 +210,14 @@ const Skills: React.FC = () => {
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                { name: 'Software Architecture', icon: '🏗️' },
-                { name: 'Performance Optimization', icon: '⚡' },
-                { name: 'System Design', icon: '🔧' },
-                { name: 'Code Review', icon: '👁️' },
-                { name: 'Testing & Debugging', icon: '🐛' },
-                { name: 'Documentation', icon: '📚' },
-                { name: 'Team Collaboration', icon: '🤝' },
-                { name: 'Problem Analysis', icon: '🔍' }
+                { name: 'Algorithm Design', icon: '🧮' },
+                { name: 'Memory Optimization', icon: '⚡' },
+                { name: 'System Architecture', icon: '🏗️' },
+                { name: 'Code Optimization', icon: '🔧' },
+                { name: 'Performance Profiling', icon: '📊' },
+                { name: 'Mathematical Modeling', icon: '📐' },
+                { name: 'Parallel Computing', icon: '🔄' },
+                { name: 'Data Structures', icon: '🗂️' }
               ].map((competency, index) => (
                 <motion.div
                   key={competency.name}
@@ -225,7 +225,7 @@ const Skills: React.FC = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ delay: index * 0.1, duration: 0.5 }}
                   viewport={{ once: true }}
-                  className="flex items-center gap-3 text-sm text-slate-300 hover:text-white transition-colors group"
+                  className="flex items-center gap-3 text-sm text-gray-200 hover:text-white transition-colors group"
                 >
                   <span className="text-lg group-hover:scale-110 transition-transform duration-300">
                     {competency.icon}

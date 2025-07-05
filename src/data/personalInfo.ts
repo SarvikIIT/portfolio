@@ -17,7 +17,7 @@ export const personalInfo: PersonalInfo = {
   and competitive programming. I love solving complex algorithmic problems and have a strong interest in quantitative finance. 
   Currently exploring the intersection of algorithms, mathematical models, and financial applications. 
   I believe in writing efficient, optimized code and solving complex problems through systematic thinking.`,
-  email: "sarvik.studet.cd.eee24@iitbhu.ac.in",
+  email: "sarvik.student.cd.eee24@iitbhu.ac.in",
   location: "Lucknow, India",
   avatar: "👨‍💻", // Emoji placeholder - can be replaced with actual photo
   resumeUrl: "#" // Placeholder - replace with actual resume URL

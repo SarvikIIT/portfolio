@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="text-xl md:text-2xl lg:text-3xl text-slate-100 mb-6 heading-text font-medium"
+              className="text-xl md:text-2xl lg:text-3xl text-white mb-6 heading-text font-medium"
             >
               {personalInfo.title}
             </motion.h2>
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="text-lg text-slate-300 mb-8 max-w-lg mx-auto lg:mx-0 body-text leading-relaxed"
+              className="text-lg text-gray-200 mb-8 max-w-lg mx-auto lg:mx-0 body-text leading-relaxed"
             >
               {personalInfo.tagline}
             </motion.p>

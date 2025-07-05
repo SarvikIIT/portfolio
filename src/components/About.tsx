@@ -7,8 +7,8 @@ const About: React.FC = () => {
   const stats = [
     { label: 'Programming Languages', value: '8+' },
     { label: 'Competitive Problems Solved', value: '500+' },
-    { label: 'Projects Completed', value: '15+' },
-    { label: 'Technologies Mastered', value: '12+' }
+    { label: 'Projects Completed', value: '10+' },
+    { label: 'Technologies Mastered', value: '10+' }
   ];
 
   return (
@@ -24,7 +24,7 @@ const About: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             About <span className="gradient-text">Me</span>
           </h2>
-          <p className="text-slate-300 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-200 max-w-2xl mx-auto text-lg">
             Get to know me better and understand what drives my passion for high-performance programming and competitive problem-solving.
           </p>
         </motion.div>
@@ -38,25 +38,25 @@ const About: React.FC = () => {
             viewport={{ once: true }}
           >
             <div className="space-y-6">
-              <p className="text-lg leading-relaxed text-slate-200">
+              <p className="text-lg leading-relaxed text-gray-100">
                 {personalInfo.about}
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="flex items-center gap-3 text-slate-300">
-                  <MapPin className="w-5 h-5 text-emerald-400" />
+                <div className="flex items-center gap-3 text-gray-200">
+                  <MapPin className="w-5 h-5 text-cyan-400" />
                   <span>{personalInfo.location}</span>
                 </div>
-                <div className="flex items-center gap-3 text-slate-300">
-                  <Mail className="w-5 h-5 text-emerald-400" />
+                <div className="flex items-center gap-3 text-gray-200">
+                  <Mail className="w-5 h-5 text-cyan-400" />
                   <span>{personalInfo.email}</span>
                 </div>
-                <div className="flex items-center gap-3 text-slate-300">
-                  <Calendar className="w-5 h-5 text-emerald-400" />
+                <div className="flex items-center gap-3 text-gray-200">
+                  <Calendar className="w-5 h-5 text-cyan-400" />
                   <span>Available for opportunities</span>
                 </div>
-                <div className="flex items-center gap-3 text-slate-300">
-                  <Code className="w-5 h-5 text-emerald-400" />
+                <div className="flex items-center gap-3 text-gray-200">
+                  <Code className="w-5 h-5 text-cyan-400" />
                   <span>Student & Freelance</span>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const About: React.FC = () => {
                   <div className="text-3xl font-bold gradient-text mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-sm text-slate-400">
+                  <div className="text-sm text-gray-300">
                     {stat.label}
                   </div>
                 </motion.div>
@@ -136,31 +136,31 @@ const About: React.FC = () => {
           className="mt-16 grid md:grid-cols-3 gap-8"
         >
                       <div className="card text-center">
-              <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Code className="w-6 h-6 text-emerald-400" />
+              <div className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <Code className="w-6 h-6 text-cyan-400" />
               </div>
-              <h3 className="text-lg font-semibold mb-2 text-slate-50">High Performance</h3>
-              <p className="text-slate-400 text-sm">
+              <h3 className="text-lg font-semibold mb-2 text-white">High Performance</h3>
+              <p className="text-gray-300 text-sm">
                 Writing optimized, efficient code with focus on system-level programming and performance.
               </p>
             </div>
             
             <div className="card text-center">
-              <div className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <div className="w-6 h-6 text-cyan-400">🧮</div>
+              <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="w-6 h-6 text-blue-400">🧮</div>
               </div>
-              <h3 className="text-lg font-semibold mb-2 text-slate-50">Problem Solving</h3>
-              <p className="text-slate-400 text-sm">
+              <h3 className="text-lg font-semibold mb-2 text-white">Problem Solving</h3>
+              <p className="text-gray-300 text-sm">
                 Advanced algorithmic thinking and data structure implementation for complex problem-solving.
               </p>
             </div>
             
             <div className="card text-center">
-              <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <div className="w-6 h-6 text-blue-400">🚀</div>
+              <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="w-6 h-6 text-purple-400">🚀</div>
               </div>
-              <h3 className="text-lg font-semibold mb-2 text-slate-50">Innovation</h3>
-              <p className="text-slate-400 text-sm">
+              <h3 className="text-lg font-semibold mb-2 text-white">Innovation</h3>
+              <p className="text-gray-300 text-sm">
                 Exploring cutting-edge technologies and pushing the boundaries of what's possible in software development.
               </p>
             </div>
