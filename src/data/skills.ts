@@ -6,47 +6,40 @@ export interface Skill {
 }
 
 export const skills: Skill[] = [
-  // Frontend
-  { name: 'React', level: 95, category: 'frontend', icon: '⚛️' },
-  { name: 'TypeScript', level: 90, category: 'frontend', icon: '📘' },
-  { name: 'JavaScript', level: 95, category: 'frontend', icon: '🟨' },
-  { name: 'HTML/CSS', level: 90, category: 'frontend', icon: '🌐' },
-  { name: 'Tailwind CSS', level: 85, category: 'frontend', icon: '🎨' },
-  { name: 'Next.js', level: 80, category: 'frontend', icon: '⚡' },
-  
-  // Backend
-  { name: 'Node.js', level: 90, category: 'backend', icon: '🟢' },
-  { name: 'Express.js', level: 85, category: 'backend', icon: '🚂' },
-  { name: 'Python', level: 80, category: 'backend', icon: '🐍' },
-  { name: 'Django', level: 75, category: 'backend', icon: '🎯' },
-  { name: 'FastAPI', level: 70, category: 'backend', icon: '⚡' },
-  
-  // Database
-  { name: 'MongoDB', level: 85, category: 'database', icon: '🍃' },
-  { name: 'PostgreSQL', level: 80, category: 'database', icon: '🐘' },
-  { name: 'Redis', level: 75, category: 'database', icon: '🔴' },
-  
-  // DevOps
-  { name: 'Docker', level: 80, category: 'devops', icon: '🐳' },
-  { name: 'AWS', level: 75, category: 'devops', icon: '☁️' },
-  { name: 'Git', level: 90, category: 'devops', icon: '📝' },
-  { name: 'CI/CD', level: 70, category: 'devops', icon: '🔄' },
-  
-  // Tools
-  { name: 'VS Code', level: 95, category: 'tools', icon: '💻' },
-  { name: 'Figma', level: 70, category: 'tools', icon: '🎨' },
-  { name: 'Postman', level: 85, category: 'tools', icon: '📮' },
-  
-  // Languages
-  { name: 'C++', level: 85, category: 'languages', icon: '⚙️' },
+  // Programming Languages
+  { name: 'C++', level: 95, category: 'languages', icon: '⚙️' },
+  { name: 'Python', level: 85, category: 'languages', icon: '🐍' },
   { name: 'Java', level: 75, category: 'languages', icon: '☕' },
-  { name: 'Go', level: 65, category: 'languages', icon: '🐹' },
+  { name: 'JavaScript', level: 70, category: 'languages', icon: '🟨' },
+  
+  // Algorithms & Data Structures
+  { name: 'Algorithms', level: 90, category: 'frontend', icon: '🧮' },
+  { name: 'Data Structures', level: 90, category: 'frontend', icon: '📊' },
+  { name: 'Competitive Programming', level: 85, category: 'frontend', icon: '🏆' },
+  { name: 'Dynamic Programming', level: 80, category: 'frontend', icon: '⚡' },
+  
+  // Mathematical Modeling
+  { name: 'Mathematical Modeling', level: 85, category: 'backend', icon: '📐' },
+  { name: 'Numerical Methods', level: 80, category: 'backend', icon: '🔢' },
+  { name: 'Optimization', level: 75, category: 'backend', icon: '🎯' },
+  { name: 'Statistics', level: 70, category: 'backend', icon: '📈' },
+  
+  // Quantitative Finance
+  { name: 'Financial Modeling', level: 75, category: 'database', icon: '💰' },
+  { name: 'Risk Management', level: 70, category: 'database', icon: '🛡️' },
+  { name: 'Trading Algorithms', level: 65, category: 'database', icon: '📈' },
+  
+  // Tools & Technologies
+  { name: 'Git', level: 85, category: 'devops', icon: '📝' },
+  { name: 'VS Code', level: 90, category: 'tools', icon: '💻' },
+  { name: 'Linux', level: 80, category: 'tools', icon: '🐧' },
+  { name: 'Docker', level: 65, category: 'tools', icon: '🐳' },
 ];
 
 export const skillCategories = {
-  frontend: 'Frontend Development',
-  backend: 'Backend Development',
-  database: 'Database & Storage',
+  frontend: 'Algorithms & Data Structures',
+  backend: 'Mathematical Modeling',
+  database: 'Quantitative Finance',
   devops: 'DevOps & Tools',
   tools: 'Development Tools',
   languages: 'Programming Languages'

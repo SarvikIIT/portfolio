@@ -11,34 +11,44 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'ecommerce-platform',
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, payment integration, and admin dashboard.',
-    image: '/projects/ecommerce.jpg',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/username/ecommerce-platform',
-    liveUrl: 'https://ecommerce-demo.com',
+    id: 'algorithm-visualizer',
+    title: 'Algorithm Visualizer',
+    description: 'An interactive web application that visualizes various algorithms like sorting, pathfinding, and graph algorithms. Built with C++ backend and React frontend for educational purposes.',
+    image: '/projects/algo-viz.jpg',
+    technologies: ['C++', 'React', 'JavaScript', 'D3.js', 'WebAssembly'],
+    githubUrl: 'https://github.com/SarvikIIT/algorithm-visualizer',
+    liveUrl: '#',
     featured: true
   },
   {
-    id: 'task-management-app',
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features. Built with React, TypeScript, and Socket.io.',
-    image: '/projects/task-app.jpg',
-    technologies: ['React', 'TypeScript', 'Socket.io', 'Node.js', 'PostgreSQL', 'Docker'],
-    githubUrl: 'https://github.com/username/task-management',
-    liveUrl: 'https://task-app-demo.com',
+    id: 'trading-strategy-backtester',
+    title: 'Trading Strategy Backtester',
+    description: 'A quantitative finance tool for backtesting trading strategies using historical market data. Implements various technical indicators and risk management features.',
+    image: '/projects/trading.jpg',
+    technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Financial Data APIs'],
+    githubUrl: 'https://github.com/SarvikIIT/trading-backtester',
+    liveUrl: '#',
     featured: true
   },
   {
-    id: 'ai-chatbot',
-    title: 'AI Chatbot',
-    description: 'An intelligent chatbot powered by OpenAI GPT-3, featuring natural language processing, conversation memory, and integration with various messaging platforms.',
-    image: '/projects/chatbot.jpg',
-    technologies: ['Python', 'OpenAI API', 'FastAPI', 'React', 'WebSocket', 'Redis'],
-    githubUrl: 'https://github.com/username/ai-chatbot',
-    liveUrl: 'https://chatbot-demo.com',
+    id: 'mathematical-modeling-library',
+    title: 'Mathematical Modeling Library',
+    description: 'A C++ library for mathematical modeling and optimization problems. Includes implementations of numerical methods, optimization algorithms, and statistical analysis tools.',
+    image: '/projects/math-lib.jpg',
+    technologies: ['C++', 'Eigen', 'Boost', 'CMake', 'Unit Testing'],
+    githubUrl: 'https://github.com/SarvikIIT/math-modeling-lib',
+    liveUrl: '#',
     featured: true
+  },
+  {
+    id: 'competitive-programming-solutions',
+    title: 'Competitive Programming Solutions',
+    description: 'A collection of my solutions to competitive programming problems from platforms like Codeforces, CodeChef, and LeetCode. Organized by difficulty and topic.',
+    image: '/projects/cp-solutions.jpg',
+    technologies: ['C++', 'Algorithms', 'Data Structures', 'Problem Solving'],
+    githubUrl: 'https://github.com/SarvikIIT/cp-solutions',
+    liveUrl: '#',
+    featured: false
   },
   {
     id: 'portfolio-website',
@@ -46,28 +56,18 @@ export const projects: Project[] = [
     description: 'A modern, responsive portfolio website built with React and Tailwind CSS. Features dark mode, smooth animations, and optimized performance.',
     image: '/projects/portfolio.jpg',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite'],
-    githubUrl: 'https://github.com/username/portfolio',
-    liveUrl: 'https://portfolio-demo.com',
+    githubUrl: 'https://github.com/SarvikIIT/portfolio',
+    liveUrl: '#',
     featured: false
   },
   {
-    id: 'weather-app',
-    title: 'Weather Dashboard',
-    description: 'A weather application that displays current weather conditions and forecasts for multiple locations. Features interactive maps and detailed weather analytics.',
-    image: '/projects/weather.jpg',
-    technologies: ['React', 'OpenWeather API', 'Chart.js', 'Leaflet', 'CSS3'],
-    githubUrl: 'https://github.com/username/weather-app',
-    liveUrl: 'https://weather-demo.com',
-    featured: false
-  },
-  {
-    id: 'blog-platform',
-    title: 'Blog Platform',
-    description: 'A content management system for blogs with markdown support, SEO optimization, and analytics dashboard. Built with Next.js and Prisma.',
-    image: '/projects/blog.jpg',
-    technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'Vercel'],
-    githubUrl: 'https://github.com/username/blog-platform',
-    liveUrl: 'https://blog-demo.com',
+    id: 'data-structures-implementation',
+    title: 'Data Structures Implementation',
+    description: 'A comprehensive implementation of various data structures in C++ with detailed documentation and performance analysis. Includes custom allocators and memory optimization.',
+    image: '/projects/ds-impl.jpg',
+    technologies: ['C++', 'STL', 'Memory Management', 'Performance Analysis'],
+    githubUrl: 'https://github.com/SarvikIIT/data-structures',
+    liveUrl: '#',
     featured: false
   }
 ]; 

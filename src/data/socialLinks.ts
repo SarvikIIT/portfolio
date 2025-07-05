@@ -8,32 +8,32 @@ export interface SocialLink {
 export const socialLinks: SocialLink[] = [
   {
     name: 'GitHub',
-    url: 'https://github.com/username',
+    url: 'https://github.com/SarvikIIT',
     icon: 'github',
     color: 'hover:text-gray-400'
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/username',
+    url: 'https://linkedin.com/in/sarvik-iit',
     icon: 'linkedin',
     color: 'hover:text-blue-400'
   },
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/username',
-    icon: 'twitter',
-    color: 'hover:text-blue-400'
+    name: 'Codeforces',
+    url: 'https://codeforces.com/profile/sarvik',
+    icon: 'code',
+    color: 'hover:text-blue-600'
+  },
+  {
+    name: 'LeetCode',
+    url: 'https://leetcode.com/sarvik',
+    icon: 'code',
+    color: 'hover:text-yellow-400'
   },
   {
     name: 'Email',
-    url: 'mailto:john.doe@example.com',
+    url: 'mailto:sarvik.studet.cd.eee24@iitbhu.ac.in',
     icon: 'mail',
     color: 'hover:text-red-400'
-  },
-  {
-    name: 'Portfolio',
-    url: 'https://portfolio.com',
-    icon: 'globe',
-    color: 'hover:text-green-400'
   }
 ]; 

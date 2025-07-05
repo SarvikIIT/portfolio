@@ -10,16 +10,15 @@ export interface PersonalInfo {
 }
 
 export const personalInfo: PersonalInfo = {
-  name: "John Doe",
-  title: "Full Stack Developer",
-  tagline: "Crafting digital experiences with code and creativity",
-  about: `I'm a passionate full-stack developer with 5+ years of experience building modern web applications. 
-  I specialize in React, Node.js, and cloud technologies, with a keen eye for design and user experience. 
-  When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
-  or sharing knowledge with the developer community. I believe in writing clean, maintainable code and 
-  creating solutions that make a real impact.`,
-  email: "john.doe@example.com",
-  location: "San Francisco, CA",
-  avatar: "/avatar.jpg", // Placeholder - replace with actual image
-  resumeUrl: "/resume.pdf" // Placeholder - replace with actual resume
+  name: "Sarvik",
+  title: "B.Tech + M.Tech Student | Competitive Programmer",
+  tagline: "Quantitative Finance Enthusiast & High-Performance C++ Developer",
+  about: `I'm a 2nd-year dual degree B.Tech + M.Tech student at IIT BHU, passionate about high-performance C++ programming 
+  and mathematical modeling. I love competitive programming and have a strong interest in quantitative finance. 
+  Currently exploring the intersection of algorithms, mathematical models, and financial applications. 
+  I believe in writing efficient, optimized code and solving complex problems through systematic thinking.`,
+  email: "sarvik.studet.cd.eee24@iitbhu.ac.in",
+  location: "Lucknow, India",
+  avatar: "👨‍💻", // Emoji placeholder - can be replaced with actual photo
+  resumeUrl: "#" // Placeholder - replace with actual resume URL
 }; 
