@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://SarvikIIT.github.io/portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -47,9 +46,10 @@
     ]
   },
   "devDependencies": {
+    "@types/react-scroll": "^1.8.10",
     "autoprefixer": "^10.4.14",
     "gh-pages": "^6.1.0",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3"
   }
-} 
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { skills, skillCategories } from '../data/skills.ts';
+import { skills, skillCategories } from '../data/skills';
 
 const Skills: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');

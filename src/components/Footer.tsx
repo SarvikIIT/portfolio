@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUp, Heart } from 'lucide-react';
-import { personalInfo } from '../data/personalInfo.ts';
-import { socialLinks } from '../data/socialLinks.ts';
+import { personalInfo } from '../data/personalInfo';
+import { socialLinks } from '../data/socialLinks';
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {

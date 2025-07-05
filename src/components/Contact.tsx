@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter, Globe } from 'lucide-react';
-import { personalInfo } from '../data/personalInfo.ts';
-import { socialLinks } from '../data/socialLinks.ts';
+import { personalInfo } from '../data/personalInfo';
+import { socialLinks } from '../data/socialLinks';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({

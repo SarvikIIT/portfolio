@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Download, Mail, ChevronDown } from 'lucide-react';
-import { personalInfo } from '../data/personalInfo.ts';
+import { personalInfo } from '../data/personalInfo';
 
 const Hero: React.FC = () => {
   const scrollToAbout = () => {
