@@ -90,7 +90,7 @@ const Resume: React.FC = () => {
                 <ul className="space-y-2 text-sm text-gray-300">
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    1st Place in Integral Cup Prelim Round (Jane Street, Optiver, QRT)
+                    1st Place in Integral Cup Preliminary Round (Jane Street, Optiver, QRT)
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
