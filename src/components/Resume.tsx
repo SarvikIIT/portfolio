@@ -31,7 +31,7 @@ const Resume: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Download <span className="gradient-text">Resume</span>
           </h2>
-          <p className="text-dark-400 max-w-2xl mx-auto">
+          <p className="text-gray-200 max-w-2xl mx-auto text-lg">
             Get a detailed overview of my skills, experience, and qualifications in a professional format.
           </p>
         </motion.div>
@@ -52,61 +52,61 @@ const Resume: React.FC = () => {
               {personalInfo.name}'s Resume
             </h3>
             
-            <p className="text-dark-400 mb-8 max-w-2xl mx-auto">
-              A comprehensive document showcasing my professional journey, technical skills, 
-              and achievements in software development. Includes detailed work experience, 
-              education background, and technical competencies.
+            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+              A comprehensive document showcasing my journey in competitive programming, 
+              high-performance C++ development, and quantitative finance. Includes detailed 
+              achievements, research experience, and technical competencies.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="text-left">
-                <h4 className="font-semibold mb-3 text-primary-400">What's Included:</h4>
-                <ul className="space-y-2 text-sm text-dark-300">
+                <h4 className="font-semibold mb-3 text-cyan-400">What's Included:</h4>
+                <ul className="space-y-2 text-sm text-gray-300">
                   <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                    Professional Summary & Skills
+                    <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
+                    Competitive Programming Achievements
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                    Work Experience & Achievements
+                    <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
+                    Research Experience & Publications
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                    Education & Certifications
+                    <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
+                    Education & Academic Background
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
+                    <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
                     Technical Skills & Technologies
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                    Projects & Portfolio Highlights
+                    <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
+                    Projects & Algorithm Implementations
                   </li>
                 </ul>
               </div>
               
               <div className="text-left">
-                <h4 className="font-semibold mb-3 text-accent-400">Key Highlights:</h4>
-                <ul className="space-y-2 text-sm text-dark-300">
+                <h4 className="font-semibold mb-3 text-blue-400">Key Highlights:</h4>
+                <ul className="space-y-2 text-sm text-gray-300">
                   <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
-                    5+ Years of Development Experience
+                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    1st Place in Integral Cup Prelim Round (Jane Street, Optiver, QRT)
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
-                    Full-Stack Development Expertise
+                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    Research Consultant at WorldQuant
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
-                    Cloud & DevOps Experience
+                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    Expert Level Competitive Programming
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
-                    Team Leadership & Mentoring
+                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    High-Performance C++ Development
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
-                    Agile & Project Management
+                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    Quantitative Finance Research
                   </li>
                 </ul>
               </div>

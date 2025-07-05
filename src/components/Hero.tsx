@@ -101,7 +101,7 @@ const Hero: React.FC = () => {
             >
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full mirror-surface overflow-hidden">
                               <div className="w-full h-full bg-gradient-to-br from-emerald-500/20 via-teal-500/20 to-cyan-500/20 flex items-center justify-center">
-                <span className="text-6xl md:text-8xl">⚡</span>
+                <span className="text-6xl md:text-8xl">💻</span>
               </div>
               </div>
               

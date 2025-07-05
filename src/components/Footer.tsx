@@ -21,6 +21,10 @@ const Footer: React.FC = () => {
         return <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>;
       case 'globe':
         return <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>;
+      case 'codeforces':
+        return <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5C6 20.328 5.328 21 4.5 21h-3C.672 21 0 20.328 0 19.5V9c0-.828.672-1.5 1.5-1.5h3zM24 19.5c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5V9c0-.828.672-1.5 1.5-1.5h3c.828 0 1.5.672 1.5 1.5v10.5zM10.5 9.75L15 18l-1.5.75-4.5-8.25L10.5 9.75z"/></svg>;
+      case 'leetcode':
+        return <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a1.653 1.653 0 0 0 0 2.227L7.116 16.85l5.406 5.789a1.374 1.374 0 0 0 1.961 0l5.406-5.789 3.854-4.126a1.653 1.653 0 0 0 0-2.227L16.891 6.226l-5.406-5.788A1.374 1.374 0 0 0 13.483 0zM9.12 8.449l5.363 5.789a.458.458 0 0 1 0 .659L9.12 20.686a.458.458 0 0 1-.659 0L3.098 14.897a.458.458 0 0 1 0-.659L8.461 8.449a.458.458 0 0 1 .659 0z"/></svg>;
       default:
         return <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>;
     }
@@ -41,8 +45,8 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold gradient-text mb-2">
               {personalInfo.name}
             </h3>
-            <p className="text-dark-400 text-sm">
-              Full-stack developer passionate about creating exceptional digital experiences.
+            <p className="text-gray-300 text-sm">
+              High-performance C++ developer and competitive programmer passionate about algorithms and quantitative finance.
             </p>
           </motion.div>
 
@@ -58,7 +62,7 @@ const Footer: React.FC = () => {
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <a 
                 href="#about" 
-                className="text-dark-400 hover:text-primary-400 transition-colors"
+                className="text-gray-300 hover:text-cyan-400 transition-colors"
                 onClick={(e) => {
                   e.preventDefault();
                   document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
@@ -68,7 +72,7 @@ const Footer: React.FC = () => {
               </a>
               <a 
                 href="#projects" 
-                className="text-dark-400 hover:text-primary-400 transition-colors"
+                className="text-gray-300 hover:text-cyan-400 transition-colors"
                 onClick={(e) => {
                   e.preventDefault();
                   document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
@@ -78,7 +82,7 @@ const Footer: React.FC = () => {
               </a>
               <a 
                 href="#experience" 
-                className="text-dark-400 hover:text-primary-400 transition-colors"
+                className="text-gray-300 hover:text-cyan-400 transition-colors"
                 onClick={(e) => {
                   e.preventDefault();
                   document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' });
@@ -88,7 +92,7 @@ const Footer: React.FC = () => {
               </a>
               <a 
                 href="#contact" 
-                className="text-dark-400 hover:text-primary-400 transition-colors"
+                className="text-gray-300 hover:text-cyan-400 transition-colors"
                 onClick={(e) => {
                   e.preventDefault();
                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
@@ -117,7 +121,7 @@ const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className={`w-10 h-10 bg-dark-800 rounded-full flex items-center justify-center border border-dark-600 hover:border-primary-500 transition-all duration-300 ${social.color}`}
+                  className={`w-10 h-10 bg-slate-800/50 rounded-full flex items-center justify-center border border-slate-700/50 hover:border-cyan-500 transition-all duration-300 ${social.color}`}
                 >
                   {getSocialIcon(social.icon)}
                 </motion.a>

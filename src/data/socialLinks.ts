@@ -21,18 +21,18 @@ export const socialLinks: SocialLink[] = [
   {
     name: 'Codeforces',
     url: 'https://codeforces.com/profile/sarvik',
-    icon: 'code',
+    icon: 'codeforces',
     color: 'hover:text-blue-600'
   },
   {
     name: 'LeetCode',
     url: 'https://leetcode.com/sarvik',
-    icon: 'code',
+    icon: 'leetcode',
     color: 'hover:text-yellow-400'
   },
   {
     name: 'Email',
-    url: 'mailto:sarvik.studet.cd.eee24@iitbhu.ac.in',
+    url: 'mailto:sarvik.student.cd.eee24@iitbhu.ac.in',
     icon: 'mail',
     color: 'hover:text-red-400'
   }

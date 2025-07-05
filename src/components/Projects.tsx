@@ -4,11 +4,7 @@ import { ExternalLink, Github, Eye } from 'lucide-react';
 import { projects } from '../data/projects';
 
 const Projects: React.FC = () => {
-  const [filter, setFilter] = useState<'all' | 'featured'>('all');
-  
-  const filteredProjects = filter === 'all' 
-    ? projects 
-    : projects.filter(project => project.featured);
+  const filteredProjects = projects;
 
   return (
     <section id="projects" className="section-padding relative">
@@ -23,40 +19,12 @@ const Projects: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             My <span className="gradient-text">Projects</span>
           </h2>
-          <p className="text-dark-400 max-w-2xl mx-auto">
-            A showcase of my recent work, featuring full-stack applications, web services, and innovative solutions.
+          <p className="text-gray-200 max-w-2xl mx-auto text-lg">
+            A showcase of my recent work, featuring competitive programming solutions, algorithm implementations, and research projects.
           </p>
         </motion.div>
 
-        {/* Filter Buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="flex justify-center gap-4 mb-12"
-        >
-          <button
-            onClick={() => setFilter('all')}
-            className={`px-6 py-2 rounded-full transition-all duration-300 ${
-              filter === 'all'
-                ? 'bg-primary-500 text-white'
-                : 'bg-dark-800 text-dark-300 hover:bg-dark-700 hover:text-white'
-            }`}
-          >
-            All Projects
-          </button>
-          <button
-            onClick={() => setFilter('featured')}
-            className={`px-6 py-2 rounded-full transition-all duration-300 ${
-              filter === 'featured'
-                ? 'bg-primary-500 text-white'
-                : 'bg-dark-800 text-dark-300 hover:bg-dark-700 hover:text-white'
-            }`}
-          >
-            Featured
-          </button>
-        </motion.div>
+
 
         {/* Projects Grid */}
         <motion.div
@@ -108,12 +76,7 @@ const Projects: React.FC = () => {
                     </motion.a>
                   </div>
                   
-                  {/* Featured Badge */}
-                  {project.featured && (
-                    <div className="absolute top-4 left-4 px-3 py-1 bg-accent-500 text-white text-xs font-medium rounded-full">
-                      Featured
-                    </div>
-                  )}
+
                 </div>
 
                 {/* Project Content */}
