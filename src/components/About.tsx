@@ -129,7 +129,7 @@ const About: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Additional Info */}
+        {/* Additional Competencies */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -137,35 +137,35 @@ const About: React.FC = () => {
           viewport={{ once: true }}
           className="mt-16 grid md:grid-cols-3 gap-8"
         >
-                      <div className="card text-center">
-              <div className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Code className="w-6 h-6 text-cyan-400" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-white">High Performance</h3>
-              <p className="text-gray-300 text-sm">
-                Writing optimized, efficient code with focus on system-level programming and performance.
-              </p>
+          <div className="card text-center">
+            <div className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <Code className="w-6 h-6 text-cyan-400" />
             </div>
-            
-            <div className="card text-center">
-              <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <div className="w-6 h-6 text-blue-400">🧮</div>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Problem Solving</h3>
-              <p className="text-gray-300 text-sm">
-                Advanced algorithmic thinking and data structure implementation for complex problem-solving.
-              </p>
+            <h3 className="text-lg font-semibold mb-2 text-white">Competitive Programming</h3>
+            <p className="text-gray-300 text-sm">
+              Expert in algorithmic contests with strong problem-solving skills and advanced data structure knowledge.
+            </p>
+          </div>
+          
+          <div className="card text-center">
+            <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <div className="w-6 h-6 text-blue-400">📊</div>
             </div>
-            
-            <div className="card text-center">
-              <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <div className="w-6 h-6 text-purple-400">🚀</div>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Innovation</h3>
-              <p className="text-gray-300 text-sm">
-                Exploring cutting-edge technologies and pushing the boundaries of what's possible in software development.
-              </p>
+            <h3 className="text-lg font-semibold mb-2 text-white">Quantitative Finance</h3>
+            <p className="text-gray-300 text-sm">
+              Research experience in financial modeling, algorithmic trading, and quantitative analysis techniques.
+            </p>
+          </div>
+          
+          <div className="card text-center">
+            <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <div className="w-6 h-6 text-purple-400">⚡</div>
             </div>
+            <h3 className="text-lg font-semibold mb-2 text-white">High Performance C++</h3>
+            <p className="text-gray-300 text-sm">
+              Specialized in system-level programming, memory optimization, and performance-critical applications.
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>

@@ -36,6 +36,22 @@ const Experience: React.FC = () => {
               Work <span className="gradient-text">Experience</span>
             </h3>
             
+            <div className="mb-8 p-6 card">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-xl">🎯</span>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold mb-2">Professional Summary</h4>
+                  <p className="text-dark-300 text-sm leading-relaxed">
+                    Passionate about high-performance computing and quantitative finance. Currently working as a research consultant 
+                    while actively participating in competitive programming. Seeking opportunities in algorithmic trading, 
+                    system programming, and quantitative research roles.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
             <div className="space-y-8">
               {workExperience.map((item, index) => (
                 <motion.div
@@ -83,6 +99,8 @@ const Experience: React.FC = () => {
                   </div>
                 </motion.div>
               ))}
+              
+
             </div>
           </motion.div>
 
