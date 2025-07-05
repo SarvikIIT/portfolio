@@ -108,7 +108,7 @@ const Navbar: React.FC = () => {
                 duration={500}
                 className={`block px-4 py-2 rounded-lg cursor-pointer transition-all duration-300 ${
                   activeSection === item.to
-                    ? 'bg-cyan-500/20 text-cyan-400 glaze-effect'
+                    ? 'bg-emerald-500/20 text-emerald-400 glaze-effect'
                     : 'text-gray-300 hover:text-white hover:bg-white/5'
                 }`}
                 onClick={() => {

@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
       {/* Background Elements */}
       <div className="absolute inset-0 bg-black"></div>
       <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900/20 to-black"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,212,255,0.1),transparent_50%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(16,185,129,0.1),transparent_50%)]"></div>
       
       <div className="container-custom section-padding relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -100,7 +100,7 @@ const Hero: React.FC = () => {
               className="relative"
             >
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full mirror-surface overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-cyan-500/20 via-blue-500/20 to-purple-500/20 flex items-center justify-center">
+                <div className="w-full h-full bg-gradient-to-br from-emerald-500/20 via-teal-500/20 to-cyan-500/20 flex items-center justify-center">
                   <span className="text-6xl md:text-8xl">👨‍💻</span>
                 </div>
               </div>
@@ -109,12 +109,12 @@ const Hero: React.FC = () => {
               <motion.div
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full shadow-lg shadow-cyan-400/50"
+                className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-emerald-400 to-teal-500 rounded-full shadow-lg shadow-emerald-400/50"
               />
               <motion.div
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full shadow-lg shadow-purple-400/50"
+                className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-teal-400 to-cyan-500 rounded-full shadow-lg shadow-teal-400/50"
               />
             </motion.div>
           </motion.div>
@@ -133,7 +133,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 2, repeat: Infinity }}
             className="p-2 rounded-full glaze-effect hover:bg-white/10 transition-all duration-300"
           >
-            <ChevronDown className="w-6 h-6 text-cyan-400" />
+            <ChevronDown className="w-6 h-6 text-emerald-400" />
           </motion.button>
         </motion.div>
       </div>
