@@ -13,9 +13,9 @@ export const experience: TimelineItem[] = [
   // Education
   {
     id: 'dual-degree',
-    title: 'B.Tech + M.Tech Dual Degree',
+    title: 'IDD (Integrated Dual Degree)',
     subtitle: 'Indian Institute of Technology, BHU',
-    description: 'Currently pursuing dual degree in Electrical Engineering with focus on high-performance computing, algorithms, and mathematical modeling. Active in competitive programming and quantitative finance research.',
+    description: 'Currently pursuing IDD in Electrical Engineering with focus on high-performance computing, algorithms, and mathematical modeling. Active in competitive programming and quantitative finance research.',
     period: '2023 - Present',
     type: 'education',
     icon: '🎓',
