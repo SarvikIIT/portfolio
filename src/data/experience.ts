@@ -12,20 +12,20 @@ export interface TimelineItem {
 export const experience: TimelineItem[] = [
   // Education
   {
-    id: 'dual-degree',
+    id: 'idd-degree',
     title: 'IDD (Integrated Dual Degree)',
     subtitle: 'Indian Institute of Technology, BHU',
-    description: 'Currently pursuing IDD in Electrical Engineering with focus on high-performance computing, algorithms, and mathematical modeling. Active in competitive programming and quantitative finance research.',
+    description: 'Pursuing Integrated Dual Degree in Electrical Engineering. Focus on high-performance computing, algorithms, and mathematical modeling. Maintaining strong academic performance while exploring advanced topics.',
     period: '2023 - Present',
     type: 'education',
     icon: '🎓',
-    tags: ['C++', 'Algorithms', 'Mathematical Modeling', 'Competitive Programming']
+    tags: ['Electrical Engineering', 'High-Performance Computing', 'Algorithms']
   },
   {
     id: 'competitive-programming',
     title: 'Competitive Programming',
     subtitle: 'Codeforces, CodeChef, LeetCode',
-    description: 'Active competitive programmer solving algorithmic problems. Participating in coding contests and improving problem-solving skills.',
+    description: 'Active competitive programmer with strong problem-solving skills. Regular participation in coding contests and continuous improvement in algorithmic thinking.',
     period: '2023 - Present',
     type: 'education',
     icon: '🏆',
@@ -33,12 +33,22 @@ export const experience: TimelineItem[] = [
   },
   {
     id: 'quantitative-finance',
-    title: 'Quantitative Finance Research',
-    subtitle: 'Self-Study & Projects',
-    description: 'Exploring quantitative finance concepts including financial modeling, risk management, and algorithmic trading strategies.',
+    title: 'Quantitative Finance',
+    subtitle: 'Self-Study & Research',
+    description: 'Deep dive into quantitative finance concepts. Studying financial modeling, risk management, and algorithmic trading strategies through self-directed learning.',
     period: '2023 - Present',
     type: 'education',
     icon: '💰',
     tags: ['Financial Modeling', 'Risk Management', 'Python', 'Statistics']
+  },
+  {
+    id: 'academic-projects',
+    title: 'Academic Projects',
+    subtitle: 'Coursework & Personal Projects',
+    description: 'Working on various academic and personal projects including mathematical modeling, algorithm implementation, and software development.',
+    period: '2023 - Present',
+    type: 'education',
+    icon: '🔬',
+    tags: ['C++', 'Python', 'Mathematical Modeling', 'Software Development']
   }
 ]; 

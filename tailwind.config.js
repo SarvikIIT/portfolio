@@ -47,7 +47,8 @@ module.exports = {
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
-        'poppins': ['Poppins', 'sans-serif'],
+        'space-grotesk': ['Space Grotesk', 'sans-serif'],
+        'jetbrains-mono': ['JetBrains Mono', 'monospace'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-xl font-bold gradient-text"
+            className="text-xl font-bold gradient-text font-space-grotesk"
           >
             S
           </motion.div>
@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
                 className={`block px-4 py-2 rounded-lg cursor-pointer transition-all duration-300 ${
                   activeSection === item.to
                     ? 'bg-emerald-500/20 text-emerald-400 glaze-effect'
-                    : 'text-gray-300 hover:text-white hover:bg-white/5'
+                    : 'text-slate-300 hover:text-slate-100 hover:bg-white/5'
                 }`}
                 onClick={() => {
                   setActiveSection(item.to);
