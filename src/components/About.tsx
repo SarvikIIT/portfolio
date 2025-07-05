@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Mail, Calendar, Code } from 'lucide-react';
-import { personalInfo } from '../data/personalInfo';
+import { personalInfo } from '../data/personalInfo.ts';
 
 const About: React.FC = () => {
   const stats = [

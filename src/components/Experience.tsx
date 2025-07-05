@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { experience } from '../data/experience';
+import { experience } from '../data/experience.ts';
 
 const Experience: React.FC = () => {
   const workExperience = experience.filter(item => item.type === 'work');

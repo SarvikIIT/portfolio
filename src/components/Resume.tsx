@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Download, FileText, Eye } from 'lucide-react';
-import { personalInfo } from '../data/personalInfo';
+import { personalInfo } from '../data/personalInfo.ts';
 
 const Resume: React.FC = () => {
   const handleDownload = () => {

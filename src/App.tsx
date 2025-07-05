@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Experience from './components/Experience';
-import Resume from './components/Resume';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import ThemeToggle from './components/ThemeToggle';
+import Navbar from './components/Navbar.tsx';
+import Hero from './components/Hero.tsx';
+import About from './components/About.tsx';
+import Skills from './components/Skills.tsx';
+import Projects from './components/Projects.tsx';
+import Experience from './components/Experience.tsx';
+import Resume from './components/Resume.tsx';
+import Contact from './components/Contact.tsx';
+import Footer from './components/Footer.tsx';
+import ThemeToggle from './components/ThemeToggle.tsx';
 
 function App() {
   const [isDark, setIsDark] = useState(true);
