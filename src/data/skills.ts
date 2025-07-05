@@ -8,26 +8,26 @@ export interface Skill {
 export const skills: Skill[] = [
   // Core Programming
   { name: 'C++', level: 95, category: 'languages', icon: '⚙️' },
-  { name: 'Python', level: 85, category: 'languages', icon: '🐍' },
+  { name: 'Rust', level: 75, category: 'languages', icon: '🦀' },
   
-  // Algorithms & Problem Solving
+  // High Performance & Competitive Programming
+  { name: 'High Performance C++', level: 90, category: 'frontend', icon: '🚀' },
   { name: 'Competitive Programming', level: 90, category: 'frontend', icon: '🏆' },
   { name: 'Algorithms & Data Structures', level: 90, category: 'frontend', icon: '🧮' },
-  { name: 'Dynamic Programming', level: 85, category: 'frontend', icon: '⚡' },
   
-  // Mathematical & Financial
+  // Core CS & Mathematical
+  { name: 'Core CS Subjects', level: 85, category: 'backend', icon: '💻' },
   { name: 'Mathematical Modeling', level: 85, category: 'backend', icon: '📐' },
-  { name: 'Quantitative Finance', level: 80, category: 'backend', icon: '💰' },
-  { name: 'Optimization', level: 80, category: 'backend', icon: '🎯' },
+  { name: 'Machine Learning', level: 70, category: 'backend', icon: '🤖' },
   
-  // Development Tools
-  { name: 'Git', level: 85, category: 'devops', icon: '📝' },
-  { name: 'Linux', level: 80, category: 'devops', icon: '🐧' },
+  // Development & Tools
+  { name: 'Docker', level: 80, category: 'devops', icon: '🐳' },
+  { name: 'Git & GitHub', level: 85, category: 'devops', icon: '📝' },
 ];
 
 export const skillCategories = {
-  frontend: 'Algorithms & Problem Solving',
-  backend: 'Mathematical & Financial',
-  devops: 'Development Tools',
+  frontend: 'High Performance & Competitive Programming',
+  backend: 'Core CS & Mathematical',
+  devops: 'Development & Tools',
   languages: 'Programming Languages'
 }; 

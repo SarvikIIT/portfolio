@@ -108,8 +108,8 @@ const Navbar: React.FC = () => {
                 duration={500}
                 className={`block px-4 py-2 rounded-lg cursor-pointer transition-all duration-300 ${
                   activeSection === item.to
-                    ? 'bg-emerald-500/20 text-emerald-400 glaze-effect'
-                    : 'text-slate-300 hover:text-slate-100 hover:bg-white/5'
+                    ? 'bg-emerald-500/20 text-emerald-300 glaze-effect'
+                    : 'text-slate-200 hover:text-slate-50 hover:bg-white/5'
                 }`}
                 onClick={() => {
                   setActiveSection(item.to);

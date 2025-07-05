@@ -21,22 +21,22 @@ export const projects: Project[] = [
     featured: true
   },
   {
-    id: 'project-2',
-    title: 'Project 2',
-    description: 'Coming soon...',
-    image: '/projects/placeholder.jpg',
-    technologies: ['C++', 'Python', 'Algorithms'],
-    githubUrl: '#',
+    id: 'competitive-programming-solutions',
+    title: 'Competitive Programming Solutions',
+    description: 'A comprehensive collection of my solutions to competitive programming problems from Codeforces, CodeChef, and LeetCode. Organized by difficulty and topic with detailed explanations.',
+    image: '/projects/cp-solutions.jpg',
+    technologies: ['C++', 'Algorithms', 'Data Structures', 'Problem Solving'],
+    githubUrl: 'https://github.com/SarvikIIT/cp-solutions',
     liveUrl: '#',
     featured: true
   },
   {
-    id: 'project-3',
-    title: 'Project 3',
-    description: 'Coming soon...',
-    image: '/projects/placeholder.jpg',
-    technologies: ['C++', 'Python', 'Algorithms'],
-    githubUrl: '#',
+    id: 'quantitative-finance-tools',
+    title: 'Quantitative Finance Tools',
+    description: 'A collection of tools and models for quantitative finance including backtesting frameworks, risk management systems, and algorithmic trading strategies.',
+    image: '/projects/quant-tools.jpg',
+    technologies: ['C++', 'Python', 'Financial Modeling', 'Risk Management'],
+    githubUrl: 'https://github.com/SarvikIIT/quantitative-finance-tools',
     liveUrl: '#',
     featured: true
   }

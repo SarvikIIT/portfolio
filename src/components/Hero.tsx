@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="text-xl md:text-2xl lg:text-3xl text-slate-300 mb-6 heading-text"
+              className="text-xl md:text-2xl lg:text-3xl text-slate-200 mb-6 heading-text"
             >
               {personalInfo.title}
             </motion.h2>
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="text-lg text-slate-300 mb-8 max-w-lg mx-auto lg:mx-0 body-text"
+              className="text-lg text-slate-100 mb-8 max-w-lg mx-auto lg:mx-0 body-text"
             >
               {personalInfo.tagline}
             </motion.p>
@@ -100,9 +100,9 @@ const Hero: React.FC = () => {
               className="relative"
             >
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full mirror-surface overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-emerald-500/20 via-teal-500/20 to-cyan-500/20 flex items-center justify-center">
-                  <span className="text-6xl md:text-8xl">👨‍💻</span>
-                </div>
+                              <div className="w-full h-full bg-gradient-to-br from-emerald-500/20 via-teal-500/20 to-cyan-500/20 flex items-center justify-center">
+                <span className="text-6xl md:text-8xl">⚡</span>
+              </div>
               </div>
               
               {/* Floating Elements */}
@@ -133,7 +133,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 2, repeat: Infinity }}
             className="p-2 rounded-full glaze-effect hover:bg-white/10 transition-all duration-300"
           >
-            <ChevronDown className="w-6 h-6 text-emerald-400" />
+            <ChevronDown className="w-6 h-6 text-emerald-300" />
           </motion.button>
         </motion.div>
       </div>
