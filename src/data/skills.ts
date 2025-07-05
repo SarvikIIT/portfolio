@@ -1,7 +1,7 @@
 export interface Skill {
   name: string;
   level: number; // 0-100
-  category: 'frontend' | 'backend' | 'database' | 'devops' | 'tools' | 'languages';
+  category: 'frontend' | 'backend' | 'devops' | 'languages';
   icon?: string;
 }
 
@@ -22,13 +22,12 @@ export const skills: Skill[] = [
   
   // Development Tools
   { name: 'Git', level: 85, category: 'devops', icon: '📝' },
-  { name: 'Linux', level: 80, category: 'tools', icon: '🐧' },
+  { name: 'Linux', level: 80, category: 'devops', icon: '🐧' },
 ];
 
 export const skillCategories = {
   frontend: 'Algorithms & Problem Solving',
   backend: 'Mathematical & Financial',
   devops: 'Development Tools',
-  tools: 'Development Tools',
   languages: 'Programming Languages'
 }; 
