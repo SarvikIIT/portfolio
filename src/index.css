@@ -4,12 +4,13 @@
 
 @layer base {
   * {
-    @apply border-gray-200;
+    @apply border-gray-800;
   }
   
   body {
-    @apply bg-dark-950 text-white font-inter;
+    @apply bg-black text-white font-inter;
     font-feature-settings: "rlig" 1, "calt" 1;
+    background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #000000 100%);
   }
   
   html {
@@ -19,19 +20,44 @@
 
 @layer components {
   .glass {
-    @apply bg-white/10 backdrop-blur-md border border-white/20;
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl;
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.1);
   }
   
   .glass-dark {
-    @apply bg-dark-800/50 backdrop-blur-md border border-dark-600/50;
+    @apply bg-black/40 backdrop-blur-xl border border-white/5 shadow-2xl;
+    background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 100%);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05);
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-primary-400 to-accent-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent;
+    text-shadow: 0 0 30px rgba(34, 211, 238, 0.3);
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-br from-dark-900 via-dark-800 to-dark-950;
+    @apply bg-gradient-to-br from-black via-gray-900 to-black;
+    background: linear-gradient(135deg, #000000 0%, #111111 50%, #000000 100%);
+  }
+  
+  .mirror-surface {
+    background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 50%, rgba(255,255,255,0.08) 100%);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 
+      0 8px 32px rgba(0,0,0,0.4),
+      inset 0 1px 0 rgba(255,255,255,0.1),
+      0 0 0 1px rgba(255,255,255,0.05);
+  }
+  
+  .glaze-effect {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.02) 50%, rgba(255,255,255,0.1) 100%);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 
+      0 4px 16px rgba(0,0,0,0.3),
+      inset 0 1px 0 rgba(255,255,255,0.05);
   }
   
   .section-padding {
@@ -43,15 +69,49 @@
   }
   
   .btn-primary {
-    @apply px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-medium rounded-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-dark-950;
+    @apply px-6 py-3 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none;
+    background: linear-gradient(135deg, #00d4ff 0%, #0099cc 50%, #0066ff 100%);
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #00b8e6 0%, #0088b3 50%, #0055e6 100%);
+    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4), inset 0 1px 0 rgba(255,255,255,0.3);
   }
   
   .btn-secondary {
-    @apply px-6 py-3 border border-primary-500 text-primary-400 font-medium rounded-lg hover:bg-primary-500 hover:text-white transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-dark-950;
+    @apply px-6 py-3 text-cyan-400 font-medium rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.1), inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  
+  .btn-secondary:hover {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(0, 212, 255, 0.1) 100%);
+    color: white;
+    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.2), inset 0 1px 0 rgba(255,255,255,0.2);
   }
   
   .card {
-    @apply glass-dark rounded-xl p-6 hover:bg-dark-800/70 transition-all duration-300;
+    @apply rounded-xl p-6 transition-all duration-300;
+    background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 100%);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 
+      0 8px 32px rgba(0,0,0,0.4),
+      inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  
+  .card:hover {
+    background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    box-shadow: 
+      0 12px 40px rgba(0,0,0,0.5),
+      inset 0 1px 0 rgba(255,255,255,0.15),
+      0 0 20px rgba(0, 212, 255, 0.1);
+    transform: translateY(-2px);
   }
   
   .timeline-item {
@@ -72,12 +132,13 @@
   }
   
   .nav-link {
-    @apply text-dark-300 hover:text-white transition-colors duration-300 relative;
+    @apply text-gray-300 hover:text-white transition-all duration-300 relative;
   }
   
   .nav-link::after {
     content: '';
-    @apply absolute bottom-[-4px] left-0 w-0 h-0.5 bg-gradient-to-r from-primary-500 to-accent-500 transition-all duration-300;
+    @apply absolute bottom-[-4px] left-0 w-0 h-0.5 transition-all duration-300;
+    background: linear-gradient(90deg, #00d4ff 0%, #0099cc 50%, #0066ff 100%);
   }
   
   .nav-link:hover::after {
@@ -85,7 +146,7 @@
   }
   
   .nav-link.active {
-    @apply text-white;
+    @apply text-cyan-400;
   }
   
   .nav-link.active::after {

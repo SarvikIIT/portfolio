@@ -11,8 +11,9 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 gradient-bg"></div>
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%239C92AC%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+      <div className="absolute inset-0 bg-black"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900/20 to-black"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,212,255,0.1),transparent_50%)]"></div>
       
       <div className="container-custom section-padding relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -98,8 +99,8 @@ const Hero: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               className="relative"
             >
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full glass-dark backdrop-blur-md border-4 border-primary-500/30 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-primary-500/20 to-accent-500/20 flex items-center justify-center">
+              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full mirror-surface overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-br from-cyan-500/20 via-blue-500/20 to-purple-500/20 flex items-center justify-center">
                   <span className="text-6xl md:text-8xl">👨‍💻</span>
                 </div>
               </div>
@@ -108,12 +109,12 @@ const Hero: React.FC = () => {
               <motion.div
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-4 -right-4 w-8 h-8 bg-primary-500 rounded-full"
+                className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full shadow-lg shadow-cyan-400/50"
               />
               <motion.div
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-4 -left-4 w-6 h-6 bg-accent-500 rounded-full"
+                className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full shadow-lg shadow-purple-400/50"
               />
             </motion.div>
           </motion.div>
@@ -130,9 +131,9 @@ const Hero: React.FC = () => {
             onClick={scrollToAbout}
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="p-2 rounded-full glass-dark backdrop-blur-md border border-dark-600/50 hover:bg-dark-800/70 transition-colors"
+            className="p-2 rounded-full glaze-effect hover:bg-white/10 transition-all duration-300"
           >
-            <ChevronDown className="w-6 h-6 text-primary-400" />
+            <ChevronDown className="w-6 h-6 text-cyan-400" />
           </motion.button>
         </motion.div>
       </div>

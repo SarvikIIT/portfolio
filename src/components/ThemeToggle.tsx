@@ -14,7 +14,7 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({ isDark, setIsDark }) => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 0.5, duration: 0.3 }}
       onClick={() => setIsDark(!isDark)}
-      className="fixed top-20 right-4 z-50 p-3 rounded-full glass-dark backdrop-blur-md border border-dark-600/50 hover:bg-dark-800/70 transition-all duration-300 group"
+      className="fixed top-20 right-4 z-50 p-3 rounded-full glaze-effect hover:bg-white/10 transition-all duration-300 group"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
     >

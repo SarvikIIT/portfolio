@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'glass-dark backdrop-blur-md border-b border-dark-600/50' 
+          ? 'mirror-surface border-b border-white/10' 
           : 'bg-transparent'
       }`}
     >
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             className="text-xl font-bold gradient-text"
           >
-            JD
+            S
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-dark-800 transition-colors"
+            className="md:hidden p-2 rounded-lg glaze-effect hover:bg-white/10 transition-all duration-300"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
           transition={{ duration: 0.3 }}
           className="md:hidden overflow-hidden"
         >
-          <div className="py-4 space-y-2 border-t border-dark-600/50">
+          <div className="py-4 space-y-2 border-t border-white/10">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -106,10 +106,10 @@ const Navbar: React.FC = () => {
                 smooth={true}
                 offset={-80}
                 duration={500}
-                className={`block px-4 py-2 rounded-lg cursor-pointer transition-colors ${
+                className={`block px-4 py-2 rounded-lg cursor-pointer transition-all duration-300 ${
                   activeSection === item.to
-                    ? 'bg-primary-500/20 text-primary-400'
-                    : 'text-dark-300 hover:text-white hover:bg-dark-800'
+                    ? 'bg-cyan-500/20 text-cyan-400 glaze-effect'
+                    : 'text-gray-300 hover:text-white hover:bg-white/5'
                 }`}
                 onClick={() => {
                   setActiveSection(item.to);
