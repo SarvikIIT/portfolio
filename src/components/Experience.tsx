@@ -36,22 +36,6 @@ const Experience: React.FC = () => {
               Work <span className="gradient-text">Experience</span>
             </h3>
             
-            <div className="mb-8 p-6 card">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-xl">🎯</span>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold mb-2">Professional Summary</h4>
-                  <p className="text-dark-300 text-sm leading-relaxed">
-                    Passionate about high-performance computing and quantitative finance. Currently working as a research consultant 
-                    while actively participating in competitive programming. Seeking opportunities in algorithmic trading, 
-                    system programming, and quantitative research roles.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
             <div className="space-y-8">
               {workExperience.map((item, index) => (
                 <motion.div
@@ -60,26 +44,26 @@ const Experience: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="timeline-item"
+                  className="card p-6 hover:border-primary-500/30 transition-all duration-300"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center flex-shrink-0 border border-primary-500/20">
                       <span className="text-xl">{item.icon}</span>
                     </div>
                     
                     <div className="flex-1">
-                      <div className="flex items-center justify-between mb-2">
-                        <h4 className="text-lg font-semibold">{item.title}</h4>
-                        <span className="text-sm text-primary-400 font-medium">
+                      <div className="flex items-center justify-between mb-3">
+                        <h4 className="text-lg font-semibold text-white">{item.title}</h4>
+                        <span className="text-sm text-primary-400 font-medium bg-primary-500/10 px-3 py-1 rounded-full">
                           {item.period}
                         </span>
                       </div>
                       
-                      <h5 className="text-primary-400 font-medium mb-3">
+                      <h5 className="text-primary-400 font-medium mb-3 text-base">
                         {item.subtitle}
                       </h5>
                       
-                      <p className="text-dark-300 text-sm leading-relaxed mb-3">
+                      <p className="text-dark-300 text-sm leading-relaxed mb-4">
                         {item.description}
                       </p>
                       
@@ -88,7 +72,7 @@ const Experience: React.FC = () => {
                           {item.tags.map((tag) => (
                             <span
                               key={tag}
-                              className="px-3 py-1 bg-dark-700 text-xs text-primary-400 rounded-full"
+                              className="px-3 py-1 bg-dark-700 text-xs text-primary-400 rounded-full border border-primary-500/20"
                             >
                               {tag}
                             </span>
@@ -123,26 +107,26 @@ const Experience: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="timeline-item"
+                  className="card p-6 hover:border-accent-500/30 transition-all duration-300"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-accent-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-accent-500/20 rounded-full flex items-center justify-center flex-shrink-0 border border-accent-500/20">
                       <span className="text-xl">{item.icon}</span>
                     </div>
                     
                     <div className="flex-1">
-                      <div className="flex items-center justify-between mb-2">
-                        <h4 className="text-lg font-semibold">{item.title}</h4>
-                        <span className="text-sm text-accent-400 font-medium">
+                      <div className="flex items-center justify-between mb-3">
+                        <h4 className="text-lg font-semibold text-white">{item.title}</h4>
+                        <span className="text-sm text-accent-400 font-medium bg-accent-500/10 px-3 py-1 rounded-full">
                           {item.period}
                         </span>
                       </div>
                       
-                      <h5 className="text-accent-400 font-medium mb-3">
+                      <h5 className="text-accent-400 font-medium mb-3 text-base">
                         {item.subtitle}
                       </h5>
                       
-                      <p className="text-dark-300 text-sm leading-relaxed mb-3">
+                      <p className="text-dark-300 text-sm leading-relaxed mb-4">
                         {item.description}
                       </p>
                       
@@ -151,7 +135,7 @@ const Experience: React.FC = () => {
                           {item.tags.map((tag) => (
                             <span
                               key={tag}
-                              className="px-3 py-1 bg-dark-700 text-xs text-accent-400 rounded-full"
+                              className="px-3 py-1 bg-dark-700 text-xs text-accent-400 rounded-full border border-accent-500/20"
                             >
                               {tag}
                             </span>
