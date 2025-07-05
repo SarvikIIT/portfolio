@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Calendar, Code } from 'lucide-react';
+import { MapPin, Calendar, Code, Mail } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 
 const About: React.FC = () => {
@@ -48,7 +48,7 @@ const About: React.FC = () => {
                   <span>{personalInfo.location}</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-200">
-                  <span className="text-cyan-400 text-lg">📧</span>
+                  <Mail className="w-5 h-5 text-cyan-400" />
                   <span>{personalInfo.email}</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-200">
