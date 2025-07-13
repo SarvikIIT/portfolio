@@ -107,20 +107,20 @@ const Hero: React.FC = () => {
               className="relative"
             >
               {/* Terminal Window */}
-              <div className="w-full max-w-sm h-72 sm:w-[22rem] sm:h-80 md:w-[26rem] md:h-96 lg:max-w-[22rem] rounded-lg mirror-surface overflow-hidden border border-emerald-500/20 shadow-2xl shadow-emerald-500/10">
+              <div className="w-full max-w-xs min-w-[16rem] h-64 sm:max-w-md sm:h-80 md:max-w-lg md:h-96 lg:max-w-[30rem] lg:h-[28rem] rounded-xl mirror-surface overflow-hidden border border-emerald-500/20 shadow-2xl shadow-emerald-500/10">
                 {/* Terminal Header */}
-                <div className="bg-gradient-to-r from-gray-900 to-gray-800 px-4 lg:px-6 py-3 flex items-center justify-between border-b border-gray-700">
+                <div className="bg-gradient-to-r from-gray-900 to-gray-800 px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between border-b border-gray-700">
                   <div className="flex items-center space-x-2">
                     <div className="w-3 h-3 rounded-full bg-red-500"></div>
                     <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
                   </div>
-                  <div className="text-xs lg:text-sm text-gray-400 font-jetbrains-mono">terminal</div>
+                  <div className="text-xs sm:text-sm lg:text-base text-gray-400 font-jetbrains-mono">terminal</div>
                 </div>
                 
                 {/* Terminal Content */}
-                <div className="bg-black/90 p-4 lg:p-6 h-full">
-                  <div className="font-jetbrains-mono text-xs sm:text-sm space-y-2">
+                <div className="bg-black/90 p-3 sm:p-6 lg:p-8 h-full">
+                  <div className="font-jetbrains-mono text-xs sm:text-sm md:text-base lg:text-lg space-y-2 sm:space-y-3">
                     <div className="flex items-center space-x-2">
                       <span className="text-emerald-400">sarvik@quant:~</span>
                       <span className="text-cyan-400">$</span>
