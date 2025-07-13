@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
             </motion.div>
           </motion.div>
           
-          {/* Right Content - Profile Image */}
+          {/* Right Content - Terminal */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -96,13 +96,53 @@ const Hero: React.FC = () => {
             className="flex justify-center lg:justify-end"
           >
             <motion.div
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.02 }}
               className="relative"
             >
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full mirror-surface overflow-hidden">
-                              <div className="w-full h-full bg-gradient-to-br from-emerald-500/20 via-teal-500/20 to-cyan-500/20 flex items-center justify-center">
-                <span className="text-6xl md:text-8xl">💻</span>
-              </div>
+              {/* Terminal Window */}
+              <div className="w-full max-w-sm h-80 sm:w-[24rem] sm:h-96 md:w-[36rem] md:h-[28rem] rounded-lg mirror-surface overflow-hidden border border-emerald-500/20 shadow-2xl shadow-emerald-500/10">
+                {/* Terminal Header */}
+                <div className="bg-gradient-to-r from-gray-900 to-gray-800 px-6 py-3 flex items-center justify-between border-b border-gray-700">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                  </div>
+                  <div className="text-sm text-gray-400 font-jetbrains-mono">terminal</div>
+                </div>
+                
+                {/* Terminal Content */}
+                <div className="bg-black/90 p-6 h-full">
+                  <div className="font-jetbrains-mono text-sm sm:text-base space-y-4 sm:space-y-6">
+                    <div className="flex items-center space-x-2">
+                      <span className="text-emerald-400">sarvik@quant:~</span>
+                      <span className="text-cyan-400">$</span>
+                      <span className="text-white">whoami</span>
+                    </div>
+                    <div className="text-emerald-300 ml-4">
+                      sarvik: quant + system dev 🚀
+                    </div>
+                    
+                    <div className="flex items-center space-x-2">
+                      <span className="text-emerald-400">sarvik@quant:~</span>
+                      <span className="text-cyan-400">$</span>
+                      <span className="text-white">cat skills.txt</span>
+                    </div>
+                    <div className="text-gray-300 ml-4 space-y-2">
+                      <div>⚡ High Performance C++</div>
+                      <div>🦀 Rust Systems Programming</div>
+                      <div>🔧 Systems Programming</div>
+                      <div>🏆 Competitive Programming</div>
+                      <div>📊 Quantitative Trading</div>
+                    </div>
+                    
+                    <div className="flex items-center space-x-2">
+                      <span className="text-emerald-400">sarvik@quant:~</span>
+                      <span className="text-cyan-400">$</span>
+                      <span className="text-white animate-pulse" style={{animationDuration: '1.5s'}}>_</span>
+                    </div>
+                  </div>
+                </div>
               </div>
               
               {/* Floating Elements */}
