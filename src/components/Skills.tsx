@@ -41,14 +41,14 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <section id="skills" className="section-padding relative">
-      <div className="container-custom">
+    <section id="skills" className="section-padding relative performance-optimized fluid-section">
+      <div className="container-custom section-content">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Technical <span className="gradient-text">Expertise</span>
@@ -60,11 +60,11 @@ const Skills: React.FC = () => {
 
         {/* Category Filter */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true, margin: "-80px" }}
+          className="flex flex-wrap justify-center gap-4 mb-10"
         >
           {categories.map((category) => (
             <button
@@ -85,23 +85,23 @@ const Skills: React.FC = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true, margin: "-100px" }}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {filteredSkills.map((skill, index) => (
             <motion.div
               key={skill.name}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              viewport={{ once: true }}
-              className="group relative overflow-hidden"
+              transition={{ delay: index * 0.02, duration: 0.4, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-80px" }}
+              className="group relative overflow-visible p-2"
             >
-              <div className="card h-full hover:scale-105 transition-all duration-300 border border-slate-700/50 hover:border-emerald-500/30">
+              <div className="skills-card h-full hover:scale-[1.02] instant-animation">
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="text-3xl group-hover:scale-110 transition-transform duration-300">
+                    <div className="text-3xl group-hover:scale-110 transition-transform duration-400 ease-out">
                       {skill.icon}
                     </div>
                     <div>
@@ -140,7 +140,7 @@ const Skills: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.6 }}
+          transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
           className="mt-20"
         >
@@ -200,7 +200,7 @@ const Skills: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.6 }}
+          transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
           className="mt-20"
         >

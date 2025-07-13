@@ -4,7 +4,7 @@ A modern, responsive personal portfolio showcasing my expertise in high-performa
 
 ## 👨‍💻 About Me
 
-I'm a 2nd-year IDD (Integrated Dual Degree) student in Electrical & Electronics Engineering at IIT BHU, passionate about high-performance C++ programming and competitive programming. I love solving complex algorithmic problems and have a strong interest in quantitative finance.
+I'm a 2nd-year Electrical Engineering student at IIT BHU, passionate about high-performance C++ programming and competitive programming. I love solving complex algorithmic problems and have a strong interest in quantitative finance.
 
 **Key Highlights:**
 - 🏆 **Competitive Programming Expert**: Active participant in Codeforces, CodeChef, and LeetCode

@@ -5,13 +5,23 @@ import { personalInfo } from '../data/personalInfo';
 
 const Resume: React.FC = () => {
   const handleDownload = () => {
-    // Create a temporary link element to trigger download
-    const link = document.createElement('a');
-    link.href = personalInfo.resumeUrl;
-    link.download = `${personalInfo.name.replace(' ', '_')}_Resume.pdf`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // For Google Drive links, we need to convert to direct download
+    const driveUrl = personalInfo.resumeUrl;
+    const fileId = driveUrl.match(/\/d\/([a-zA-Z0-9-_]+)/)?.[1];
+    
+    if (fileId) {
+      const directDownloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+      const link = document.createElement('a');
+      link.href = directDownloadUrl;
+      link.download = `${personalInfo.name.replace(' ', '_')}_Resume.pdf`;
+      link.target = '_blank';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else {
+      // Fallback to opening in new tab
+      window.open(personalInfo.resumeUrl, '_blank');
+    }
   };
 
   const handleView = () => {
@@ -24,7 +34,7 @@ const Resume: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >

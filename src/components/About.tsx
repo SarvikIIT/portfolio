@@ -12,14 +12,14 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="section-padding relative">
-      <div className="container-custom">
+    <section id="about" className="section-padding relative performance-optimized fluid-section">
+      <div className="container-custom section-content">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             About <span className="gradient-text">Me</span>
@@ -34,8 +34,8 @@ const About: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true, margin: "-50px" }}
           >
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-gray-100">
@@ -69,8 +69,8 @@ const About: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: true, margin: "-50px" }}
             className="space-y-8"
           >
             {/* Stats Grid */}
@@ -80,8 +80,8 @@ const About: React.FC = () => {
                   key={stat.label}
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: index * 0.05, duration: 0.3 }}
-                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.03, duration: 0.4, ease: "easeOut" }}
+                  viewport={{ once: true, margin: "-50px" }}
                   className="card text-center"
                 >
                   <div className="text-3xl font-bold gradient-text mb-2">
@@ -96,20 +96,45 @@ const About: React.FC = () => {
 
             {/* Profile Image */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.4 }}
-              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-50px" }}
               className="relative"
             >
-              <div className="w-full h-64 rounded-2xl glass-dark backdrop-blur-md border border-dark-600/50 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-primary-500/10 to-accent-500/10 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center mx-auto mb-4">
-                      <span className="text-3xl">👨‍💻</span>
+              {/* Terminal Window */}
+              <div className="w-full h-64 rounded-lg mirror-surface overflow-hidden border border-emerald-500/20 shadow-2xl shadow-emerald-500/10 hover:scale-[1.02] transition-transform duration-300 ease-out">
+                {/* Terminal Header */}
+                <div className="bg-gradient-to-r from-gray-900 to-gray-800 px-6 py-3 flex items-center justify-between border-b border-gray-700">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                  </div>
+                  <div className="text-sm text-gray-400 font-jetbrains-mono">about-sarvik</div>
+                </div>
+                
+                {/* Terminal Content */}
+                <div className="bg-black/90 p-6 h-full">
+                  <div className="font-jetbrains-mono text-xs sm:text-sm space-y-2">
+                    <div className="flex items-center space-x-2">
+                      <span className="text-emerald-400">sarvik@quant:~</span>
+                      <span className="text-cyan-400">$</span>
+                      <span className="text-white">cat about.txt</span>
                     </div>
-                    <h3 className="text-xl font-semibold mb-2">Sarvik</h3>
-                    <p className="text-dark-400">IDD (Integrated Dual Degree) Student | Competitive Programmer</p>
+                    <div className="text-gray-300 ml-4 space-y-1 text-xs sm:text-sm">
+                      <div>👨‍💻 Name: Sarvik</div>
+                      <div>🎓 Degree: Electrical Engineering</div>
+                      <div>🏆 Specialty: Competitive Programming</div>
+                      <div>📊 Focus: Quantitative Development</div>
+                      <div>📍 Location: Lucknow, India</div>
+                    </div>
+                    
+                    <div className="flex items-center space-x-2">
+                      <span className="text-emerald-400">sarvik@quant:~</span>
+                      <span className="text-cyan-400">$</span>
+                      <span className="text-white animate-pulse" style={{animationDuration: '1.5s'}}>_</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -117,12 +142,12 @@ const About: React.FC = () => {
               {/* Decorative Elements */}
               <motion.div
                 animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                 className="absolute -top-4 -right-4 w-8 h-8 border-2 border-primary-500/30 rounded-full"
               />
               <motion.div
                 animate={{ rotate: -360 }}
-                transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 className="absolute -bottom-4 -left-4 w-6 h-6 border-2 border-accent-500/30 rounded-full"
               />
             </motion.div>
@@ -131,11 +156,11 @@ const About: React.FC = () => {
 
         {/* Additional Competencies */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.4 }}
-          viewport={{ once: true }}
-          className="mt-16 grid md:grid-cols-3 gap-8"
+          transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true, margin: "-50px" }}
+          className="mt-12 grid md:grid-cols-3 gap-8"
         >
           <div className="card text-center">
             <div className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">

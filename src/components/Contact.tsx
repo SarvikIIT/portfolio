@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter, Globe } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 import { personalInfo } from '../data/personalInfo';
 import { socialLinks } from '../data/socialLinks';
+import { emailConfig } from '../config/emailConfig';
 
 const Contact: React.FC = () => {
+  const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,6 +15,7 @@ const Contact: React.FC = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -24,24 +28,49 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus('idle');
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData);
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-    setIsSubmitting(false);
-    
-    // Show success message (you could add a toast notification here)
-    alert('Thank you for your message! I will get back to you soon.');
+    try {
+      // EmailJS configuration
+      const { serviceId, templateId, publicKey } = emailConfig;
+      
+      // Check if EmailJS is properly configured
+      if (serviceId === 'service_your_service_id' || templateId === 'template_your_template_id' || publicKey === 'your_public_key') {
+        // EmailJS not configured yet, simulate sending
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        console.log('EmailJS not configured. Form data:', formData);
+        console.log('To enable real email sending, please configure EmailJS in src/config/emailConfig.ts');
+      } else {
+        // EmailJS is configured, send real email
+        await emailjs.sendForm(serviceId, templateId, formRef.current!, publicKey);
+      }
+      
+      console.log('Form submitted:', formData);
+      
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+      setSubmitStatus('success');
+      
+      // Show success message
+      setTimeout(() => {
+        setSubmitStatus('idle');
+      }, 3000);
+      
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setSubmitStatus('error');
+      
+      setTimeout(() => {
+        setSubmitStatus('idle');
+      }, 3000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const getSocialIcon = (iconName: string) => {
@@ -62,20 +91,20 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="section-padding relative">
-      <div className="container-custom">
+    <section id="contact" className="section-padding relative performance-optimized fluid-section">
+      <div className="container-custom section-content">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <p className="text-dark-400 max-w-2xl mx-auto">
-            I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together!
+          <p className="text-gray-200 max-w-2xl mx-auto text-lg">
+            Ready to collaborate on exciting projects? Let's discuss how we can work together to bring your ideas to life.
           </p>
         </motion.div>
 
@@ -98,7 +127,12 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
-                  <p className="text-dark-400">{personalInfo.email}</p>
+                  <a 
+                    href={`mailto:${personalInfo.email}?subject=Portfolio Contact`}
+                    className="text-dark-400 hover:text-primary-400 transition-colors"
+                  >
+                    {personalInfo.email}
+                  </a>
                   <p className="text-sm text-dark-500">I'll respond within 24 hours</p>
                 </div>
               </div>
@@ -159,7 +193,7 @@ const Contact: React.FC = () => {
                 Send a <span className="gradient-text">Message</span>
               </h3>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -245,6 +279,27 @@ const Contact: React.FC = () => {
                     </>
                   )}
                 </motion.button>
+                
+                {/* Status Messages */}
+                {submitStatus === 'success' && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="mt-4 p-4 bg-green-500/20 border border-green-500/30 rounded-lg text-green-400 text-center"
+                  >
+                    ✅ Thank you for your message! I will get back to you soon.
+                  </motion.div>
+                )}
+                
+                {submitStatus === 'error' && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="mt-4 p-4 bg-red-500/20 border border-red-500/30 rounded-lg text-red-400 text-center"
+                  >
+                    ❌ Something went wrong. Please try again or contact me directly at {personalInfo.email}
+                  </motion.div>
+                )}
               </form>
             </div>
           </motion.div>
