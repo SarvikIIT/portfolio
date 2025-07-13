@@ -14,7 +14,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/sarvik-iit',
+    url: 'https://www.linkedin.com/in/sarvik1807?_l=en_US',
     icon: 'linkedin',
     color: 'hover:text-blue-400'
   },
@@ -26,7 +26,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: 'LeetCode',
-    url: 'https://leetcode.com/sarvik',
+    url: 'https://leetcode.com/u/sarvikiit/',
     icon: 'leetcode',
     color: 'hover:text-yellow-400'
   },

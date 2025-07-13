@@ -11,7 +11,7 @@ export interface PersonalInfo {
 
 export const personalInfo: PersonalInfo = {
   name: "Sarvik",
-  title: "IDD (Integrated Dual Degree) Student | Competitive Programmer",
+  title: "Electrical Engineering Student | Competitive Programmer",
   tagline: "Quantitative Finance Enthusiast & High-Performance C++ Developer",
   about: `I'm a 2nd-year IDD (Integrated Dual Degree) student in Electrical & Electronics Engineering at IIT BHU, passionate about high-performance C++ programming 
   and competitive programming. I love solving complex algorithmic problems and have a strong interest in quantitative finance. 
@@ -20,5 +20,5 @@ export const personalInfo: PersonalInfo = {
   email: "sarvik.student.cd.eee24@iitbhu.ac.in",
   location: "Lucknow, India",
   avatar: "👨‍💻", // Emoji placeholder - can be replaced with actual photo
-  resumeUrl: "#" // Placeholder - replace with actual resume URL
+  resumeUrl: "https://drive.google.com/file/d/1IrQdxOTY0aIKPaRw5rg_XOGRRAk5t79m/view?usp=drive_link" // Google Drive resume link
 }; 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Eye } from 'lucide-react';
 import { projects } from '../data/projects';
@@ -7,14 +7,14 @@ const Projects: React.FC = () => {
   const filteredProjects = projects;
 
   return (
-    <section id="projects" className="section-padding relative">
-      <div className="container-custom">
+    <section id="projects" className="section-padding relative performance-optimized fluid-section">
+      <div className="container-custom section-content">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             My <span className="gradient-text">Projects</span>
@@ -30,20 +30,20 @@ const Projects: React.FC = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true, margin: "-100px" }}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {filteredProjects.map((project, index) => (
             <motion.div
               key={project.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1, duration: 0.6 }}
-              viewport={{ once: true }}
+              transition={{ delay: index * 0.02, duration: 0.4, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-80px" }}
               className="group"
             >
-              <div className="card h-full flex flex-col hover:scale-105 transition-transform duration-300">
+              <div className="card h-full flex flex-col hover:scale-105 instant-animation">
                 {/* Project Image */}
                 <div className="relative overflow-hidden rounded-lg mb-6 h-48 bg-gradient-to-br from-primary-500/20 to-accent-500/20">
                   <div className="w-full h-full flex items-center justify-center">

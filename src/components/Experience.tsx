@@ -7,14 +7,14 @@ const Experience: React.FC = () => {
   const education = experience.filter(item => item.type === 'education');
 
   return (
-    <section id="experience" className="section-padding relative">
-      <div className="container-custom">
+    <section id="experience" className="section-padding relative performance-optimized fluid-section">
+      <div className="container-custom section-content">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Experience & <span className="gradient-text">Education</span>
@@ -27,13 +27,13 @@ const Experience: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Work Experience */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            viewport={{ once: true, margin: "-50px" }}
           >
-            <h3 className="text-2xl font-semibold mb-8 text-center lg:text-left">
-              Work <span className="gradient-text">Experience</span>
+            <h3 className="text-2xl font-semibold mb-8 text-center">
+              <span className="gradient-text">Work Experience</span>
             </h3>
             
             <div className="space-y-8">
@@ -42,9 +42,9 @@ const Experience: React.FC = () => {
                   key={item.id}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.05, duration: 0.4 }}
-                  viewport={{ once: true }}
-                  className="card p-6 hover:border-primary-500/30 transition-all duration-200"
+                  transition={{ delay: index * 0.03, duration: 0.4, ease: "easeOut" }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  className="card p-6 hover:border-accent-500/30 transition-all duration-200"
                 >
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center flex-shrink-0 border border-primary-500/20">
@@ -90,12 +90,12 @@ const Experience: React.FC = () => {
 
           {/* Education */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            viewport={{ once: true, margin: "-50px" }}
           >
-            <h3 className="text-2xl font-semibold mb-8 text-center lg:text-left">
+            <h3 className="text-2xl font-semibold mb-8 text-center">
               <span className="gradient-text">Education</span>
             </h3>
             
@@ -105,8 +105,8 @@ const Experience: React.FC = () => {
                   key={item.id}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.05, duration: 0.4 }}
-                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.03, duration: 0.4, ease: "easeOut" }}
+                  viewport={{ once: true, margin: "-50px" }}
                   className="card p-6 hover:border-accent-500/30 transition-all duration-200"
                 >
                   <div className="flex items-start gap-4">
