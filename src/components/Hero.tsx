@@ -127,22 +127,20 @@ const Hero: React.FC = () => {
                       <span className="text-white">whoami</span>
                     </div>
                     <div className="text-gray-300 ml-4 text-xs sm:text-sm">
-                      Sarvik - Competitive Programmer & Developer
+                      sarvik: quant + system dev 🚀
                     </div>
-                    
                     <div className="flex items-center space-x-2">
                       <span className="text-emerald-400">sarvik@quant:~</span>
                       <span className="text-cyan-400">$</span>
                       <span className="text-white">cat skills.txt</span>
                     </div>
                     <div className="text-gray-300 ml-4 space-y-1 text-xs sm:text-sm">
-                      <div>⚡ C++ (Advanced)</div>
-                      <div>🐍 Python (Expert)</div>
-                      <div>⚛️ React/Next.js</div>
-                      <div>🎯 Competitive Programming</div>
-                      <div>📊 Data Structures & Algorithms</div>
+                      <div>⚡ High Performance C++</div>
+                      <div>🦀 Rust Systems Programming</div>
+                      <div>🔧 Systems Programming</div>
+                      <div>🏆 Competitive Programming</div>
+                      <div>📊 Quantitative Trading</div>
                     </div>
-                    
                     <div className="flex items-center space-x-2">
                       <span className="text-emerald-400">sarvik@quant:~</span>
                       <span className="text-cyan-400">$</span>
